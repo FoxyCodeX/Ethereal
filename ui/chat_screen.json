@@ -1,0 +1,112 @@
+{
+
+  "messages_text/text": {
+    "shadow": true
+  },
+  
+  "messages_scrolling_panel": {
+    "size": [ "100%-2px", "100%-57px" ]
+  },
+
+  "commands_panel": {
+    "size": [ "100%", "100%-57px" ]
+  },
+
+  "previous_image": {
+    "type": "image",
+    "size": [ 13, 13 ],
+    "texture": "textures/ui/chat_previous"
+  },
+
+  "next_image": {
+    "type": "image",
+    "size": [ 13, 13 ],
+    "texture": "textures/ui/chat_next"
+  },
+
+  "autocomplete_image": {
+    "type": "image",
+    "size": [ 14, 14 ],
+    "texture": "textures/ui/chat_autocomplete"
+  },
+
+  "autocompleteback_image": {
+    "type": "image",
+    "size": [ 14, 14 ],
+    "texture": "textures/ui/chat_autocompleteback"
+  },
+
+  "chat_settings_button": {
+    "$focus_override_right": "previous_button_focus_id"
+  },
+
+  "small_glyph_button@common_buttons.light_glyph_button": {
+    "$button_content|default": "",
+    "$pressed_button_name|default": "",
+    "anchor_from": "bottom_right",
+    "anchor_to": "bottom_right",
+    "size": [ 27, 27 ]
+  },
+
+  "text_edit_box": {
+    "$focus_override_left": "next_button_focus_id",
+    "$focus_override_right": "autocompleteback_button_focus_id"
+  },
+
+  "autocomplete_button@chat.small_glyph_button": {
+    "$button_content": "chat.autocomplete_image",
+    "$pressed_button_name": "button.chat_autocomplete",
+    "$focus_id": "autocomplete_button_focus_id",
+    "$focus_override_left": "autocompleteback_button_focus_id",
+    "$focus_override_right": "keyboard_button_focus_id",
+    "$button_tts_header": "accessibility.chat.tts.autocomplete"
+  },
+  
+  "autocompleteback_button@chat.small_glyph_button": {
+    "$button_content": "chat.autocompleteback_image",
+    "$pressed_button_name": "button.chat_autocomplete_back",
+    "$focus_id": "autocompleteback_button_focus_id",
+    "$focus_override_left": "text_edit_box_focus_id",
+    "$focus_override_right": "autocomplete_button_focus_id",
+    "$button_tts_header": "accessibility.chat.tts.autocompleteback"
+  },
+  
+  "previous_button@chat.small_glyph_button": {
+    "$button_content": "chat.previous_image",
+    "$pressed_button_name": "button.chat_previous_message",
+    "$focus_id": "previous_button_focus_id",
+    "$focus_override_left": "chat_settings_button_focus_id",
+    "$focus_override_right": "next_button_focus_id",
+    "$button_tts_header": "accessibility.chat.tts.previous"
+  },
+  
+  "next_button@chat.small_glyph_button": {
+    "$button_content": "chat.next_image",
+    "$pressed_button_name": "button.chat_next_message",
+    "$focus_id": "next_button_focus_id",
+    "$focus_override_left": "previous_button_focus_id",
+    "$focus_override_right": "text_edit_box_focus_id",
+    "$button_tts_header": "accessibility.chat.tts.next"
+  },
+
+  "chat_bottom_panel": {
+    "controls": [
+      { "keyboard_button@chat.keyboard_button": {} },
+      { "host_main_button@host_options.host_main_button": { "ignored": "$is_pregame" } },
+      { "chat_settings@chat.chat_settings_button": {} },
+      { "previous_button@chat.previous_button": {} },
+      { "next_button@chat.next_button": {} },
+      { "text_box@chat.text_edit_box": {} },
+      { "autocompleteback_button@chat.autocompleteback_button": {} },
+      { "autocomplete_button@chat.autocomplete_button": {} },
+      { "send_button@chat.send_button": { "offset": [ -20, 0 ] } }
+    ]
+  },
+  
+  "chat_screen": {
+    "close_on_player_hurt": false,
+    "$header_safezone_control": "common_store.store_top_bar_filler",
+    "$header_bar_control": "common_store.store_top_bar",
+    "$render_bg": true
+  }
+}

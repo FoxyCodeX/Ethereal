@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "§aMake Your Minecraft Texture Super Smooth!\n§bAuthor §8> §6FoxyCodeX\n§bVersion §8> §ev1.0.4",
+        "name": "§l§f§kii§r §eETHEREAL [32x] §l§f§kii§r",
+        "uuid": "a7e6652e-f9c4-41eb-a3e2-903b217bebed",
+        "version": [ 1, 0, 0 ],
+        "min_engine_version": [ 1, 18, 0 ]
+    },
+    "modules": [
+        {
+            "description": "§aMake Your Minecraft Texture Super Smooth!\n§bAuthor §8> §6FoxyCodeX\n§bVersion §8> §ev1.0.4",
+            "type": "resources",
+            "uuid": "95780cdd-0220-4cd2-93b0-35cc38ad2f51",
+            "version": [ 1, 0, 0 ]
+        }
+    ]
+}
